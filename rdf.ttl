@@ -1,6 +1,6 @@
 @prefix mod: <http://model.mtrace/> .
 
-mod:JiraDocument a mod:Document, mod:Jira ;
+mod:JiraDocument a mod:Document, mod:JiraTest ;
     mod:hasTitle "JiraDocument" ;
     mod:hasLastModifiedDate "2023-5-10" ;
     mod:hasLink "link" ;
@@ -8,20 +8,20 @@ mod:JiraDocument a mod:Document, mod:Jira ;
     mod:hasSource "Jira" ;
     mod:hasContainedItems mod:JiraItem, mod:JiraSecondItem, mod:DocupediaItem .
 
-mod:JiraItem a mod:Item, mod:Jira ;
+mod:JiraItem a mod:Item, mod:JiraTest ;
     mod:hasTitle "Jira Item" ;
     mod:hasSource "Jira" ;
     mod:hasItem_id "REG_00015775" ;
     mod:hasDescription "test Jira Item" .
 
-mod:JiraSecondItem a mod:Item, mod:Jira ;
+mod:JiraSecondItem a mod:Item, mod:JiraTest ;
     mod:hasTitle "Jira Second Item" ;
     mod:hasSource "Jira" ;
     mod:hasItem_id "REG_0001" ;
     mod:hasDescription "test Jira second item" .
 
 
-mod:DocupediaItem a mod:Item, mod:Docupedia ;
+mod:DocupediaItem a mod:Item, mod:DocupediaTest ;
     mod:hasTitle "DocupediaItem" ;
     mod:hasSource "Docupedia" ;
     mod:hasItem_id "REG_00" ;
