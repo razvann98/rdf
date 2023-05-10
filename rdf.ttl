@@ -1,0 +1,15 @@
+@prefix mod: <http://model.mtrace/> .
+
+mod:JiraDocument a mod:Document, mod:Jira ;
+    mod:hasTitle "JiraDocument" ;
+    mod:hasLastModifiedDate "2023-5-10" ;
+    mod:hasLink "link" ;
+    mod:hasDescription "description" ;
+    mod:hasSource "Jira" ;
+    mod:hasContainedItems mod:JiraItem .
+
+mod:JiraItem a mod:Item, mod:Jira ;
+    mod:hasTitle "JiraItem" ;
+    mod:hasSource "Jira" ;
+    mod:hasItem_id "REG_00015775" ;
+    mod:hasDescription "test Jira Item" .
