@@ -6,10 +6,23 @@ mod:JiraDocument a mod:Document, mod:Jira ;
     mod:hasLink "link" ;
     mod:hasDescription "description" ;
     mod:hasSource "Jira" ;
-    mod:hasContainedItems mod:JiraItem .
+    mod:hasContainedItems mod:JiraItem, mod:JiraSecondItem, mod:DocupediaItem .
 
 mod:JiraItem a mod:Item, mod:Jira ;
-    mod:hasTitle "JiraItem" ;
+    mod:hasTitle "Jira Item" ;
     mod:hasSource "Jira" ;
     mod:hasItem_id "REG_00015775" ;
     mod:hasDescription "test Jira Item" .
+
+mod:JiraSecondItem a mod:Item, mod:Jira ;
+    mod:hasTitle "Jira Second Item" ;
+    mod:hasSource "Jira" ;
+    mod:hasItem_id "REG_0001" ;
+    mod:hasDescription "test Jira second item" .
+
+
+mod:DocupediaItem a mod:Item, mod:Docupedia ;
+    mod:hasTitle "DocupediaItem" ;
+    mod:hasSource "Docupedia" ;
+    mod:hasItem_id "REG_00" ;
+    mod:hasDescription "test Docupedia Item" .
